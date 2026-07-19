@@ -1,0 +1,75 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* fondo azul claro */
+    margin: 0;
+}
+
+/* Título */
+h1{
+    text-align: center;
+    color: white;
+    background-color: #4a90e2; /* azul */
+    padding: 10px;
+}
+
+/* Menú */
+ul{
+    list-style: none;
+    padding: 10px;
+    background-color: #a8d0f0; /* azul claro */
+}
+
+ul li{
+    display: inline;
+    margin-right: 20px;s
+}
+
+ul li a{
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: #e74c3c; /* rojo al pasar el mouse */
+}
+
+/* Sección */
+h2{
+    color: #175eaf;
+    margin-left: 20px;
+}
+
+/* Formulario */
+form{
+    background-color: white;
+    width: 65%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+input{
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Botón */
+button{
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+}
+
+button:hover{
+    background-color: #e74c3c;
+}
+ 
+/* CSS del FOOTER */
+footer {
+    background: #04427c;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
