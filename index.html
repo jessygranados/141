@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="EI=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgfare/Log_Edit_Fares-2" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type ="text/css" href="./EstiloCssF/dcoloresf.css">
+    <link rel="stylesheet" type ="text/css" href="./EstilosCssf/w3.css">
+    <script src="./JScript/acciones_script.js"></script>
+    <title>Fares</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <header class="w3-container fcolor-d5">
+        <h1>Ediciones Fares</h1>
+        </header>
+        <nav class="w3-bar fcolor-14">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Principal</a>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Libro</button>
+                <div class="w3-dropdown-contert w3-bar-block ftema">
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Educacion Basica</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">I BTP y I BCH</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">II BTP</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">III BTP</a> 
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Inventario</button>
+                <div class="w3-dropdown-contert w3-bar-block ftema">
+                    <a href="cproductos.php" class="w3-bar-item w3-button w3-mobile">Crear Producto</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Consultar y modificar producto</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Clientes</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Agregar Inventario</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Factura</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Informacion Libros</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Contacto</a>
+        </nav>
+    </div>
+
+    <section>
+        <div>
+            <h2>Inventario</h2>
+        </div>
+        <form action="guardar.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <div>
+                <label>Codigo: <input type="text" name="Codigo" pattern="[0-9]{3,}"
+                    placeholder="Ingresar solo numeros" size="12" autofocus required> </label>
+                    <label>Producto: <input type="text" name="nproducto" id="nproducto"
+                    pattern="^[A-Za-z\s]+{3,100}" placeholder="Ingresar solo letras" size="50"
+                    autofocus required> </label>
+            </div>
+            <div>
+                <label> Costo: <input type="text" name="costop" id="costop"
+                pattern="[0/9]+([,\.][0-9]+)?"> </label>
+                <label>Porcentaje de ventas: <input type="text" name="porcentajev"
+                id="porcentajev" maxlength="3" size="4"> </label>
+            </div>
+            <div>
+                <label>Precio de venta: <input type="text" name="pventa" id="pventa" readonly> </label>
+                <label>Fecha: <input type="date" name="fecha_creacion" id="fecha_cracion"> </label>
+            </div>
+            <div>
+                <img src="" width="200px" alt="Imagen del producto...">
+            </div>
+            <div>
+                <input type="file" name="sigmen" id="simagen">
+            </div>
+            <input type="submit" value="Guardar">
+        </form>
+    </section>
+    <footer>
+        <p>Derechos Reservados &copy; 2004-2023 </p>
+    </footer>
+</body>
+</html>
